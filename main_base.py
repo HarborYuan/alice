@@ -1,19 +1,3 @@
-import argparse
-import time
-import math
-import random
-import os
-from os import path, makedirs
-from copy import deepcopy
-
-import torch
-import torch.nn as nn
-from torch import optim
-from torch.utils.data import DataLoader
-from torch.utils.tensorboard import SummaryWriter
-from torchvision import datasets
-from torch.backends import cudnn
-
 from alice.model.model_factory import Model
 from alice.loss.criterion import AngularPenaltySMLoss
 from alice.validation.validation import NCMValidation

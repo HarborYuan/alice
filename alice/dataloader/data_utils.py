@@ -94,7 +94,7 @@ def get_incremental_dataset_fs(args, session=None):
         if i == 0:
             txt_path = "/home/FSCIL_ALICE/DATA/" + args.dataset + '/session_{0}'.format(str(i + 1)) + '.txt'
         else:
-            txt_path = /home/FSCIL_ALICE/DATA/" + args.dataset + '/session_{0}'.format(str(i + 1)) + '.txt'
+            txt_path = "/home/FSCIL_ALICE/DATA/" + args.dataset + '/session_{0}'.format(str(i + 1)) + '.txt'
         temp_class_index = open(txt_path).read().splitlines()
         for j in range(len(temp_class_index)):
             class_index.append(temp_class_index[j])
